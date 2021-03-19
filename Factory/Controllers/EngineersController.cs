@@ -60,17 +60,17 @@ namespace Factory.Controllers
 
     public ActionResult AddMachine(int id)
     {
-        var thisEngineer = _db.Engineers.FirstOrDefault(engineer => engineer.EngineerId == id);
-        ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name");
-        return View(thisEngineer);
+        var thisMachine = _db.Machines.FirstOrDefault(machine => machine.MachineId == id);
+        ViewBag.EngineerId = new SelectList(_db.Machines, "MachineId", "Name");
+        return View(thisMachine);
     }
 
     [HttpPost]
-    public ActionResult AddMachine(Machine machine, int Engineer)
+    public ActionResult AddMachine(Machine machine, int EngineerId)
     {
-      if (MachineId != 0)
+      if (EngineerId != 0)
       {
-      _db.Engineers.Add(new MachineEngineer() { MachineId = MachineId, EngineerId = engineer.EngineerId });
+      _db.Engineers.Add(new EngineerMachine() { EngineerId = EngineerId, MachineId = machine.MachineId });
       }
       _db.SaveChanges();
       return RedirectToAction("Index");
