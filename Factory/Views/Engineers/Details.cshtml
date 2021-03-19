@@ -19,10 +19,12 @@ else
   @foreach(var join in Model.JoinEntities)
   {
     <li>@join.Machine.Description</li>
+    
   }
   </ul>
 }
 
 <p>@Html.ActionLink("Back to engineers", "Index")</p>
+<p>@Html.ActionLink("add machine","Index", "Machines", "Create")</p>
 <p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId })</p>
 <p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
