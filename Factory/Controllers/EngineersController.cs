@@ -58,24 +58,6 @@ namespace Factory.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResult AddMachine(int id)
-    {
-        var thisMachine = _db.Machines.FirstOrDefault(machine => machine.MachineId == id);
-        ViewBag.EngineerId = new SelectList(_db.Machines, "MachineId", "Name");
-        return View(thisMachine);
-    }
-
-    [HttpPost]
-    public ActionResult AddMachine(Machine machine, int EngineerId)
-    {
-      if (EngineerId != 0)
-      {
-      _db.Engineers.Add(new EngineerMachine() { EngineerId = EngineerId, MachineId = machine.MachineId });
-      }
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
-
 
     public ActionResult Delete(int id)
     {
