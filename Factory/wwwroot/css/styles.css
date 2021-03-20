@@ -9,12 +9,22 @@ body {
 }
 
 h1 {
-  color: #d4d4c0;
+  color: #1e221e;
+  text-shadow: 2px 2px 3px rgb(140, 153, 110), 3px 3px 5px rgb(241, 210, 70);
+  font-size: 76px;
 }
 
 
-.ActionLink {
-	color:white;
-	font-size: 18px;
-  margin-top: 300px;
+body .ActionLink {
+	color:#36332a;
+	font-size: 24px;
+  text-shadow: -2px 0 #e4f1b3, 0 2px #f7f8c3, 1px 0 #91c519, 0 -1px rgb(226, 212, 212);
+
+}
+
+body .homeLayout {
+ 
+  padding: 230px;
+  margin: 30px;
+ 
 }
