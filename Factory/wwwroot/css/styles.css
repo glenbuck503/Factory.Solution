@@ -14,17 +14,32 @@ h1 {
   font-size: 76px;
 }
 
+p {
+  color: #1e221e;
+  text-shadow: 2px 2px 3px rgb(140, 153, 110), 3px 3px 5px rgb(241, 210, 70);
+  font-size: 30px;
+
+}
+
 
 body .ActionLink {
 	color:#36332a;
-	font-size: 24px;
+	font-size: 30px;
   text-shadow: -2px 0 #e4f1b3, 0 2px #f7f8c3, 1px 0 #91c519, 0 -1px rgb(226, 212, 212);
 
 }
 
+ .ggg {
+	color:#000000;
+  text-shadow: 2px 2px 3px rgb(140, 153, 110), 3px 3px 5px rgb(241, 210, 70);
+  font-size: 30px;
+
+}
+
+
+
 body .homeLayout {
  
-  padding: 230px;
-  margin: 30px;
- 
+  padding: 130px;
+  margin: 50px;
 }
