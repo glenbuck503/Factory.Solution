@@ -1,5 +1,20 @@
 body {
-  background-color: #b0f7b0;
-  text-align: center;
+	background: url(../assets/img/factory.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	text-align:center;
+	width: 100%;
+  height: auto;
+	
+}
 
+h1 {
+  color: #d4d4c0;
+}
+
+
+.ActionLink {
+	color:white;
+	font-size: 18px;
+  margin-top: 300px;
 }
