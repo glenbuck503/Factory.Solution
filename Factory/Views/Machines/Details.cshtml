@@ -14,11 +14,12 @@
 }
 else
 {
+  <div class="naming">
   <p>Engineers this machine can be repaired by:</p>
   <ul>
   @foreach(var join in Model.JoinEntities)
   {
-    <li>@join.Engineer.Name</li>
+    <li class="machine">@join.Engineer.Name</li>
     
     @using (Html.BeginForm("DeleteEngineer", "Machines"))
     {
@@ -28,6 +29,7 @@ else
    
   }
   </ul>
+  </div>
 }
 
 <p>@Html.ActionLink("Back to Machines", "Index")</p>
