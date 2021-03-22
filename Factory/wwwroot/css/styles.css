@@ -5,6 +5,8 @@ body {
 	text-align:center;
 	width: 100%;
   height: auto;
+  padding: 180px;
+  margin: 50px;
 	
 }
 
@@ -37,12 +39,6 @@ body .ActionLink {
 }
 
 
-
-body .homeLayout {
- 
-  padding: 130px;
-  margin: 50px;
-}
  .naming{
   color: #1e221e;
   text-shadow: 2px 2px 3px #8c996e, 3px 3px 5px rgb(241, 210, 70);
